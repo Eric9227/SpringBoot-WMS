@@ -1,0 +1,15 @@
+#TODO 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wms
+    username: root
+    password: 123123123
+    type: com.alibaba.druid.pool.DruidDataSource
+    #TODO 服务器启动端口配置
+server:
+  port: 8080
+  #TODO mybatis plus日志配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
